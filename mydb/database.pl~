@@ -148,7 +148,7 @@ my $sth = $dbh->prepare($sql_insertion);
 
 # insert!
 
-foreach my $row(@raw_data) {
+foreach my $row(@raw_data) { ### Inserting data into the table[.....      ] done
 
 	$sth->execute(@$row) || die $!;
 
